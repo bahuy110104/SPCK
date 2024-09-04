@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family:'Poppins', sans-serif;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+section {
+    padding-top: 80px; /* Thay đổi giá trị để phù hợp với chiều cao của navbar */
+}
+
+header{
+    position: sticky; /* Đặt vị trí sticky */
+    top: 0; /* Đảm bảo thanh điều hướng dính vào đầu trang */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff; /* Thêm nền trắng để thanh điều hướng nổi bật */
+    z-index: 1000; /* Đảm bảo thanh điều hướng nằm trên các phần tử khác */
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.Logo{
+    display: flex;
+    align-items: center;
+    color: #333;    
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-left: 30px;
+}
+
+.Navbar{
+    display: flex;
+    column-gap: 4rem;
+}
+
+.Navbar li {
+    list-style: none;
+    position: relative;
+}
+
+.Navbar a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.Navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.Navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.search-container {
+    padding: 0;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.search-container input {
+    width: 200px;
+    height: 15px;
+    font-size: 14px;
+    padding: 10px 40px 10px 20px; 
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.search-container .bx{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.header-icon{
+    display: flex;
+    font-size: 24px;
+    padding-right: 30px;
+    cursor: pointer;
+    gap: 30px;
+}
+
+/* Contact */
+#Contact{
+    padding-top: 80px;
+}
+
+.info-container1{
+    justify-content: space-between;
+}
+
+.include{
+    display: flex;
+    align-items: center;
+    
+}
+
+.include2{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+}
+
+
+
+.include .bx.bxs-phone {
+    background-color: #DB4444; 
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.call-to{
+    padding-left: 30px;
+}
+
+.include2 .bx.bx-envelope {
+    background-color: #DB4444;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    gap: 30px;
+}
+
+.write-to{
+    padding-left: 30px;
+}
+
+.available, .phone-number, .fill-out, .email-1{
+    padding-top: 30px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contain-3-input {
+    display: flex;
+    width: 737px;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.input-container{
+    margin-top: 40px;
+}
+
+
+.contain-3-input input {
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F5F5F5;
+    
+}
+
+.message {
+    width: 737px;
+    height: 207px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F5F5F5;
+    text-align: left;
+    line-height: normal; 
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.message-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-button1 {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #DB4444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 215px;
+    height: 56px;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.message-button1:hover {
+    background-color: #5bc0de;
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
+
+
+/* About css */
+
+#about {
+    padding-top: 80px; /* Thay đổi giá trị để phù hợp với chiều cao của navbar */
+}
+
+.about-content{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.pargraph-container{
+   align-self: center;
+   padding-left: 100px;
+}
+
+.header-paragraph{
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+
+.content1{
+    padding-bottom: 24px;
+}
+
+.logo-contain {
+    display: flex;
+    padding-top: 200px;
+    justify-content: space-around;
+}
+
+.logo-contain1, .logo-contain2, .logo-contain3, .logo-contain4 {
+    width: 270px;
+    height: 230px;
+    border: 1px solid grey;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.mini-contain1, .mini-contain2, .mini-contain3, .mini-contain4 {
+    align-items: center;
+}
+
+.number-10k,.number-33k, .number-45k, .number-25k{
+    font-size:32px;
+    font-weight: bold;
+}
+
+.saller, .monthly, .customer_active, .Anual_gross {
+    font-size: 16px; 
+}
+
+.number-33k, .monthly{
+    color: white;
+}
+.logo-contain2{
+    background-color: #DB4444;
+    border: none;
+}
+
+.photos-contain{
+    display: flex;
+    padding-top: 200px;
+    justify-content: space-around;
+}
+
+.name, .name1, .name2{
+    font-size: 32px;
+    font-weight: 200 bold;
+}
+
+.tom-info, .emma-info, .will-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1{
+    padding-top: 10px;
+}
+
+.icon1 .bx{
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+.contain{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+.delivery, .customer-service, .money{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-describe, .customer-describe, .guarantee-describe{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delivery-describe1, .customer-describe1, .guarantee-describe1{
+    padding-top: 20px;
+}
+
+
+/* sign up css */
+
+#sign-up {
+    padding-top: 80px; /* Thay đổi giá trị để phù hợp với chiều cao của navbar */
+}
+
+.container img{
+    height: 781px;
+    width: 805px;
+}
+
+.container{
+    display: flex;
+    gap: 200px;
+}
+
+.form{
+    padding-top: 200px;
+    justify-content:center;
+}
+
+.form .input-field{
+    margin-top: 50px;
+    position: relative;
+    height: 50px;
+    width: 300px;
+
+}
+
+.input-field input{
+    height: 100%;
+    width: 300px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.title {
+    text-align: center; 
+    font-size: 24px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-field {
+    margin-top: 50px;
+    position: relative;
+    height: 50px;
+    width: 300px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.create-button {
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+}
+
+.create-button:hover {
+    background-color: #DB4444;
+}
+
+.create-button:active {
+    background-color: gray;
+}
+
+.media-options a {
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+a.field-facebook {
+    color: #fff;
+    background-color: #4267b2;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+a.field-facebook .facebook-icon {
+    height: 28px;
+    width: 28px;
+    color: #fff;
+    background-color: #4267b2;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+a.field-facebook:hover {
+    background-color: #365899;
+    border: 1px solid #365899;
+}
+
+.black-box {
+    background-color: black;
+    margin-top: 100px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contain {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    padding-left: 60px;
+}
+
+.myacc, .log-reg, .cart, .whishlist, .shop{
+    padding-bottom: 20px;
+}
+
+.privacy, .term, .faq, .contact{
+    padding-bottom: 20px;
+}
+
+.Ex, .sup, .acc, .quick, .download {
+    font-size: 24px;
+    font-weight: 200 bold;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    color: #fff;
+}
+
+.container1, .container2, .container3, .container4, .container5 {
+    color: #fff;
+    margin-right: 50px;
+}
+
+.subscribe-text {
+    font-weight: 200 bold;
+    padding-bottom: 40px;
+}
+
+.input{
+    padding-top: 40px;
+}
+
+.gmail{
+    padding-top: 20px;
+}
+
+.phone{
+    padding-top: 40px;
+}
+
+.container6{
+    display: flex;
+    gap: 20px;
+}
+
+.app-group{
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}   
+
+.QR{
+    padding-top: 30px;
+}
+
+.icons-group {
+    padding-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.icons-group .bx {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+.contact{
+    padding-bottom: -50px;
+}
+
+.email-input{
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.woman-fashion, .man-fashion, .electronic, .home-lifestyle, .medicine, .sport-ourdoor, .baby-toys, .grocerles-pet, .health-beauty{
+    padding-bottom: 15px;
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CSS cho các mục trong list-container */
+.list-container div {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list-container div:hover {
+    transform: translateX(5px); /* Dịch chuyển nhẹ sang phải khi hover */
+    color: #007BFF; /* Thay đổi màu chữ khi hover */
+}
+
+/* Thêm biểu tượng mũi tên di chuyển khi hover */
+.list-container div i {
+    transition: transform 0.3s ease;
+}
+
+.list-container div:hover i {
+    transform: translateX(5px); /* Di chuyển biểu tượng sang phải khi hover */
+}
+
+.image-container img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Tăng kích thước ảnh khi hover */
+    opacity: 0.9; /* Giảm độ mờ của ảnh */
+}
+
+.flash-sale-img{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.flash-sales-product{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px; /* Reduce the gap between the items */
+    padding-top: 50px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999; /* Màu xám cho giá gốc */
+    margin-right: 10px; /* Khoảng cách giữa giá gốc và giá mới */
+}
+
+.new-price {
+    color: #e60023; /* Màu đỏ cho giá giảm */
+    font-weight: 200 bold;
+}
+
+.rating {
+    display: flex;
+    color: #f5c518; /* Màu vàng cho sao */
+    font-size: 15px; /* Kích thước sao */
+}
+
+.rating-contain{
+    display: flex;
+}
+
+.rating-count{
+    padding-left: 10px;
+}
+
+.flash-sales-product{
+    padding-top: 50px;
+}
+
+.view-product {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    padding-top: 50px; /* Adjust the padding as needed */
+    align-items: center;
+}
+
+.view-product1 {
+    padding: 10px 20px;
+    background-color: #DB4444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200 bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-product1:hover {
+    background-color: #5bc0de;
+    transform: scale(1.05);
+}
+
+.view-product1:active {
+    background-color: #333;
+    transform: scale(1);
+}
+
+.category-contain{
+    align-items: center;
+    padding-top: 200px;
+    justify-content: center;
+}
+
+.category-img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.browse-category{
+    padding-top: 100px;
+}
+
+.category-img{
+    display: flex;
+    gap: 40px;
+}
+
+.selling-products-contain{
+    padding-top: 200px;
+}
+
+.selling-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selling-products{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.ad{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.explore-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.product-line1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.price1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.product-price{
+    color: red;
+}
+
+.Curology{
+    width: 270px;
+    height: 250px;
+}
+
+.product-line2{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+
+.arrival-img{
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.pic-contain{
+    display: flex;
+}
+
+.contain-pic1{
+    display: flex;
+}
+
+.img-contain{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pic2{
+    padding-top: 40px;
+
+}
+
+.perfume{
+    padding-left: 30px;
+}
