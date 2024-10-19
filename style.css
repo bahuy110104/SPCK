@@ -7,18 +7,18 @@
 }
 
 section {
-    padding-top: 80px; /* Thay đổi giá trị để phù hợp với chiều cao của navbar */
+    padding-top: 80px;
 }
 
 header{
-    position: sticky; /* Đặt vị trí sticky */
-    top: 0; /* Đảm bảo thanh điều hướng dính vào đầu trang */
+    position: sticky;
+    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fff; /* Thêm nền trắng để thanh điều hướng nổi bật */
-    z-index: 1000; /* Đảm bảo thanh điều hướng nằm trên các phần tử khác */
+    background-color: #fff;
+    z-index: 1000;
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
 }
@@ -238,7 +238,7 @@ header{
 /* About css */
 
 #about {
-    padding-top: 80px; /* Thay đổi giá trị để phù hợp với chiều cao của navbar */
+    padding-top: 80px;
 }
 
 .about-content{
@@ -622,25 +622,25 @@ a.field-facebook:hover {
 .flash-sales-product{
     display: flex;
     justify-content: center;
-    column-gap: 40px; /* Reduce the gap between the items */
+    column-gap: 40px;
     padding-top: 50px;
 }
 
 .old-price {
     text-decoration: line-through;
-    color: #999; /* Màu xám cho giá gốc */
-    margin-right: 10px; /* Khoảng cách giữa giá gốc và giá mới */
+    color: #999; 
+    margin-right: 10px; 
 }
 
 .new-price {
-    color: #e60023; /* Màu đỏ cho giá giảm */
+    color: #e60023; 
     font-weight: 200 bold;
 }
 
 .rating {
     display: flex;
-    color: #f5c518; /* Màu vàng cho sao */
-    font-size: 15px; /* Kích thước sao */
+    color: #f5c518;
+    font-size: 15px;
 }
 
 .rating-contain{
@@ -657,8 +657,8 @@ a.field-facebook:hover {
 
 .view-product {
     display: flex;
-    justify-content: center; /* Center the button horizontally */
-    padding-top: 50px; /* Adjust the padding as needed */
+    justify-content: center; 
+    padding-top: 50px; 
     align-items: center;
 }
 
